@@ -3,41 +3,49 @@ import java.util.regex.Pattern;
 
 enum Marks {Mercedes, Volvo, LAZ, Toyota, Skamia};
 
-public class Buses implements Comparable<Buses>{
+public class Buses implements Comparable<Buses> {
     private Marks mark;
     private int capacity;
     private String number;
+
     public Buses(Marks mark, int capacity, String number) {
-        this.check(capacity,number);
+        this.check(capacity, number);
         this.mark = mark;
         this.capacity = capacity;
         this.number = number;
     }
-    private void check(int capacity, String number)
-    {
-        assert (capacity > 200 || capacity < 16): "Wrong capacity";
+
+    public Buses(){
+        this.mark = null;
+        this.capacity = 0;
+        this.number = null;
+    }
+    private void check(int capacity, String number) {
+        assert (capacity > 200 || capacity < 16) : "Wrong capacity";
         Pattern p = Pattern.compile("\\w\\w\\d\\d\\d\\d\\w\\w");
-        Matcher m=p.matcher(number);
-        if(number.length()!=8) throw new AssertionError("Wrong number");
-            else assert m.matches():"asdf";
+        Matcher m = p.matcher(number);
+        if (number.length() != 8) throw new AssertionError("Wrong number");
+        else assert m.matches() : "asdf";
 
     }
-    public int peopleInTheBus(int people){
-        assert people < 1: "Wrong amount of people";
-        int result = people / this.capacity;
-        if(result * this.capacity < people)
+
+    public int peopleInTheBus(int people) {/*
+        assert people < 1 : "Wrong amount of people";
+        int result = (int)people / this.capacity;
+        if (result * this.capacity < people)
             result++;
-        return result;
+        return result;*/
+        return 5;
     }
 
     @Override
     public boolean equals(Object obj) {
-       if(this == obj)
-           return true;
-       if( obj==null || this.getClass() != obj.getClass() )
-           return false;
-       Buses temp = (Buses)obj;
-       return ( (this.capacity == temp.capacity) || (this.mark == temp.mark) || (this.number == temp.number) );
+        if (this == obj)
+            return true;
+        if (obj == null || this.getClass() != obj.getClass())
+            return false;
+        Buses temp = (Buses) obj;
+        return ((this.capacity == temp.capacity) || (this.mark == temp.mark) || (this.number == temp.number));
     }
 
     @Override
@@ -76,12 +84,5 @@ public class Buses implements Comparable<Buses>{
 
     public void setNumber(String number) {
         this.number = number;
-    }
-
-    public static void main(String[] args) {
-        Buses bus = new Buses(Marks.LAZ,20,"FS2321FS");
-        bus.peopleInTheBus(30);
-        Buses bus1 = new Buses(Marks.LAZ,210,"FW3242gs");
-        System.out.println(bus.mark.hashCode());
     }
 }
