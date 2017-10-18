@@ -1,15 +1,18 @@
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-enum Marks {Mercedes, Volvo, LAZ, Toyota, Skamia};
 
-public class Buses implements Comparable<Buses> {
+
+public class Buses {
     private Marks mark;
     private int capacity;
     private String number;
-
+    public enum Marks {Mercedes, Volvo, LAZ, Toyota, Skamia};
     public Buses(Marks mark, int capacity, String number) {
-        this.check(capacity, number);
+        assert !(capacity > 200 | capacity < 16) : "Wrong capacity";
+        Pattern p = Pattern.compile("[A-Z]{2}\\d{4}[A-Z]{2}");
+        Matcher m = p.matcher(number);
+        assert m.matches() : "Wrong number";
         this.mark = mark;
         this.capacity = capacity;
         this.number = number;
@@ -20,24 +23,18 @@ public class Buses implements Comparable<Buses> {
         this.capacity = 0;
         this.number = null;
     }
-    private void check(int capacity, String number) {
-        assert (capacity > 200 || capacity < 16) : "Wrong capacity";
-        Pattern p = Pattern.compile("\\w\\w\\d\\d\\d\\d\\w\\w");
-        Matcher m = p.matcher(number);
-        if (number.length() != 8) throw new AssertionError("Wrong number");
-        else assert m.matches() : "asdf";
 
-    }
-
-    public int peopleInTheBus(int people) {/*
-        assert people < 1 : "Wrong amount of people";
+    public int peopleInTheBus(int people) {
+        assert people > 1 : "Wrong amount of people";
         int result = (int)people / this.capacity;
         if (result * this.capacity < people)
             result++;
-        return result;*/
-        return 5;
+        return result;
     }
 
+    public boolean isEnoughtSpace(int people){
+        return this.capacity >=people;
+    }
     @Override
     public boolean equals(Object obj) {
         if (this == obj)
@@ -55,12 +52,6 @@ public class Buses implements Comparable<Buses> {
         result = 31 * result + number.hashCode();
         return result;
     }
-
-    @Override
-    public int compareTo(Buses o) {
-        return number.compareTo(o.number);
-    }
-
 
     public Marks getMark() {
         return mark;

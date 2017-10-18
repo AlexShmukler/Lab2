@@ -1,25 +1,57 @@
+import java.util.ArrayList;
 import java.util.List;
+
 
 public class Garage {
     private List<Buses> garage;
     private int capacity;
     private String location;
     private int employers;
+
+    public Garage(){
+        this.capacity = 10;
+        this.location = "Main Str. 32";
+        this.employers = 20;
+        this.garage = new ArrayList<Buses>();
+    }
     public Garage(int capacity, String location,int employers){
+        assert (capacity > 1 | capacity < 20): "Wrong input(capacity)";
+        assert (employers > 1 | employers < 50): "Wrong input(employers)";
         this.capacity = capacity;
         this.location = location;
         this.employers = employers;
+        this.garage = new ArrayList<Buses>();
     }
+
     public Garage(int capacity, String location, List<Buses>garage,int employers){
-        this.check(capacity,employers);
         this.location = location;
         this.capacity = capacity;
         this.garage = garage;
         this.employers = employers;
     }
-    private void check(int capacity,int employers){
-        assert (employers < 1 || capacity < 1): "Wrong input";
+
+    public void deleteBus(String number){
+        for(Buses i: this.garage){
+            if(i.getNumber().equals(number)) {
+                this.garage.remove(i);
+                return;
+            }
+            throw new AssertionError("Product with this number not found");
+        }
     }
+
+    public void addBus(Buses bus){
+        this.garage.add(bus);
+    }
+
+    public boolean isEnoughtBuses(int people){
+        int allPeople=0;
+        for(Buses i:this.garage){
+            allPeople+=i.getCapacity();
+        }
+        return allPeople>=people;
+    }
+
     @Override
     public int hashCode() {
         int result = capacity * 31;
@@ -67,26 +99,9 @@ public class Garage {
 
     public void setEmployers(int employers) { this.employers = employers; }
 
-    public void deleteBus(String number){
-        for(Buses i: this.garage){
-            if(i.getNumber().equals(number)) {
-                this.garage.remove(i);
-                return;
-            }
-            throw new AssertionError("Product with this number not found");
-        }
-    }
-    public void addBus(Buses bus){
-        this.garage.add(bus);
-    }
     public int getAmountOfBuses(){
         return this.garage.size();
     }
-    public boolean isEnoughtBuses(int people){
-        int allPeople=0;
-        for(Buses i:this.garage){
-            allPeople+=i.getCapacity();
-        }
-        return allPeople>=people;
-    }
+
+
 }
