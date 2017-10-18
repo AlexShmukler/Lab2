@@ -1,3 +1,8 @@
-.idea
-lib
-out
+.metadata
+.settings
+bin
+test-output
+.classpath
+.project
+.recommenders
+RemoteSystemsTempFiles
