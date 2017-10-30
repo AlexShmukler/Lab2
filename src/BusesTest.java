@@ -1,4 +1,3 @@
-
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -6,42 +5,38 @@ import org.testng.annotations.Test;
 import static org.testng.Assert.*;
 
 public class BusesTest {
-    Buses bus1,bus2,bus3;
+    Bus bus1,bus2,bus3;
+    Buses buses1, buses2;
 
     @BeforeTest
-    public void asdf(){
-        bus1 = new Buses(Buses.Marks.Mercedes,43,"FE3242GR");
-        bus2 = new Buses(Buses.Marks.Toyota,31,"FE3242GR");
-        bus3 = new Buses(Buses.Marks.Volvo,78,"FE3242GR");
+    public void setup(){
+        buses1 = new Buses(15,"New Avenue 29",12);
+        buses2 = new Buses();
+        bus1 = new Bus(Bus.Marks.Mercedes,43,"FE3242GR");
+        bus2 = new Bus(Bus.Marks.Toyota,31,"FE3242GR");
+        bus3 = new Bus(Bus.Marks.Volvo,78,"FE3242GR");
+        buses1.addBus(bus1);
+        buses1.addBus(bus2);
+        buses2.addBus(bus2);
+        buses2.addBus(bus3);
     }
     @DataProvider
-    public Object[][] peopleInTheBusProvider() {
-        return new Object[][]{ {150, bus2, 5}, {100, bus2, 4} };
+    public Object[][] providerIsEnoughtBuses(){
+        return new Object[][]{ {buses1,71,true}, {buses1,89,false}, {buses2,102,true} };
     }
 
-    @Test(dataProvider = "peopleInTheBusProvider")
-    public void peopleInTheBusTest(int people, Buses bus2, int buses){
-
-        assertEquals(bus2.peopleInTheBus(people), buses);
-    }
-
-    @DataProvider
-    public Object[][] getMarkProvider(){
-        return new Object[][]{ {bus1,Buses.Marks.Mercedes}, {bus2,Buses.Marks.Toyota}, {bus3,Buses.Marks.Volvo} };
-    }
-
-    @Test(dataProvider = "getMarkProvider")
-    public void getMarkTest(Buses bus, Buses.Marks marks){
-        assertEquals(bus.getMark(),marks);
+    @Test(dataProvider = "providerIsEnoughtBuses")
+    public void testIsEnoughtBuses(Buses buses, int people, boolean result){
+        assertEquals(buses.isEnoughtBuses(people),result);
     }
 
     @DataProvider
-    public Object[][] isEnoughtSpaceProvider(){
-        return new Object[][]{ {bus1,43,true}, {bus2,321,false}, {bus3,57,true} };
+    public Object[][] providerGetLocation(){
+            return new Object[][]{ {buses1,"New Avenue 29"}, {buses2,"Main Str. 32"} };
+    }
+    @Test(dataProvider = "providerGetLocation")
+    public void testGetLocation(Buses buses, String location) {
+        assertEquals(buses.getLocation(),location);
     }
 
-    @Test(dataProvider = "isEnoughtSpaceProvider")
-    public void isEnoughtSpaceTest(Buses bus, int people, boolean result){
-        assertEquals(bus.isEnoughtSpace(people),result);
-    }
 }

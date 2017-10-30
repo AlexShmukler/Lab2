@@ -1,0 +1,8 @@
+.metadata
+.settings
+bin
+test-output
+.classpath
+.project
+.recommenders
+RemoteSystemsTempFiles

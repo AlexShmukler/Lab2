@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="192499df-d344-4b8d-93cd-189a182217a5" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/lab2/Marks.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/lab2/Buses.class" afterPath="$PROJECT_DIR$/out/production/lab2/Buses.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/lab2/BusesTest.class" afterPath="$PROJECT_DIR$/out/production/lab2/BusesTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/lab2/Garage.class" afterPath="$PROJECT_DIR$/out/production/lab2/Garage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/lab2/Buses.class" afterPath="$PROJECT_DIR$/out/test/lab2/Buses.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/lab2/BusesTest.class" afterPath="$PROJECT_DIR$/out/test/lab2/BusesTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/lab2/.idea/workspace.xml" afterPath="$PROJECT_DIR$/out/test/lab2/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Buses.java" afterPath="$PROJECT_DIR$/src/Buses.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BusesTest.java" afterPath="$PROJECT_DIR$/src/BusesTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Garage.java" afterPath="$PROJECT_DIR$/src/Garage.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,18 +17,16 @@
       <file leaf-file-name="Buses.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Buses.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="7" column="12" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+            <state relative-caret-position="170">
+              <caret line="10" column="62" lean-forward="true" selection-start-line="10" selection-start-column="62" selection-end-line="10" selection-end-column="62" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#998#999#0" expanded="true" />
-                <element signature="e#1043#1044#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BusesTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BusesTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/BusesTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
@@ -53,8 +41,8 @@
       <file leaf-file-name="Garage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Garage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="37" lean-forward="false" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="37" />
+            <state relative-caret-position="211">
+              <caret line="22" column="45" lean-forward="false" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -62,15 +50,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GarageTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GarageTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GarageTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="38" column="52" lean-forward="true" selection-start-line="38" selection-start-column="52" selection-end-line="38" selection-end-column="52" />
+            <state relative-caret-position="544">
+              <caret line="32" column="17" lean-forward="false" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1310#1311#0" expanded="true" />
-                <element signature="e#1369#1370#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -99,10 +85,10 @@
       <list>
         <option value="$PROJECT_DIR$/src/Bus.java" />
         <option value="$PROJECT_DIR$/lab2.iml" />
-        <option value="$PROJECT_DIR$/src/Buses.java" />
         <option value="$PROJECT_DIR$/src/BusesTest.java" />
-        <option value="$PROJECT_DIR$/src/Garage.java" />
         <option value="$PROJECT_DIR$/src/GarageTest.java" />
+        <option value="$PROJECT_DIR$/src/Garage.java" />
+        <option value="$PROJECT_DIR$/src/Buses.java" />
       </list>
     </option>
   </component>
@@ -127,6 +113,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -144,9 +133,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -180,7 +166,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.GarageTest.testGetLocation">
+  <component name="RunManager" selected="TestNG.BusesTest">
     <configuration name="BusesTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="lab2" />
@@ -406,10 +392,10 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.GarageTest.testGetLocation" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.BusesTest" />
         <item index="1" class="java.lang.String" itemvalue="TestNG.GarageTest" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.GarageTest.testIsEnoughtBuses" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.BusesTest" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.GarageTest.testGetLocation" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.GarageTest.testIsEnoughtBuses" />
         <item index="4" class="java.lang.String" itemvalue="TestNG.BusesTest.peopleInTheBusTest" />
       </list>
     </recent_temporary>
@@ -428,24 +414,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BusesTest - 2017.10.17 at 14h 42m 16s.xml">
-      <configuration name="BusesTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="BusesTest - 2017.10.17 at 14h 42m 30s.xml">
-      <configuration name="BusesTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="BusesTest - 2017.10.17 at 14h 42m 45s.xml">
-      <configuration name="BusesTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="BusesTest_getMarkTest - 2017.10.17 at 14h 31m 49s.xml">
-      <configuration name="BusesTest.getMarkTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="BusesTest_getMarkTest - 2017.10.17 at 14h 39m 30s.xml">
-      <configuration name="BusesTest.getMarkTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="BusesTest_peopleInTheBusTest - 2017.10.17 at 14h 39m 35s.xml">
-      <configuration name="BusesTest.peopleInTheBusTest" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="BusesTest_peopleInTheBusTest - 2017.10.17 at 14h 40m 06s.xml">
       <configuration name="BusesTest.peopleInTheBusTest" configurationId="TestNG" />
     </history-entry>
@@ -454,6 +422,24 @@
     </history-entry>
     <history-entry file="GarageTest - 2017.10.17 at 18h 17m 34s.xml">
       <configuration name="GarageTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="GarageTest - 2017.10.18 at 17h 01m 27s.xml">
+      <configuration name="GarageTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="GarageTest - 2017.10.18 at 17h 01m 48s.xml">
+      <configuration name="GarageTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="GarageTest - 2017.10.18 at 17h 02m 01s.xml">
+      <configuration name="GarageTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="GarageTest_testGetLocation - 2017.10.18 at 17h 00m 00s.xml">
+      <configuration name="GarageTest.testGetLocation" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="GarageTest_testGetLocation - 2017.10.18 at 17h 00m 19s.xml">
+      <configuration name="GarageTest.testGetLocation" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="GarageTest_testGetLocation - 2017.10.18 at 17h 00m 37s.xml">
+      <configuration name="GarageTest.testGetLocation" configurationId="TestNG" />
     </history-entry>
     <history-entry file="GarageTest_testIsEnoughtBuses - 2017.10.17 at 17h 34m 50s.xml">
       <configuration name="GarageTest.testIsEnoughtBuses" configurationId="TestNG" />
@@ -517,8 +503,6 @@
           <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1310#1311#0" expanded="true" />
-            <element signature="e#1369#1370#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -529,8 +513,6 @@
           <caret line="7" column="12" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#998#999#0" expanded="true" />
-            <element signature="e#1043#1044#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -561,8 +543,6 @@
           <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1310#1311#0" expanded="true" />
-            <element signature="e#1369#1370#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -573,8 +553,6 @@
           <caret line="31" column="21" lean-forward="false" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#998#999#0" expanded="true" />
-            <element signature="e#1043#1044#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -605,8 +583,6 @@
           <caret line="31" column="21" lean-forward="false" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#998#999#0" expanded="true" />
-            <element signature="e#1043#1044#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -637,8 +613,6 @@
           <caret line="31" column="21" lean-forward="false" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#998#999#0" expanded="true" />
-            <element signature="e#1043#1044#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -690,8 +664,6 @@
           <caret line="37" column="17" lean-forward="false" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#998#999#0" expanded="true" />
-            <element signature="e#1043#1044#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -722,8 +694,6 @@
           <caret line="10" column="36" lean-forward="false" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#998#999#0" expanded="true" />
-            <element signature="e#1043#1044#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -754,8 +724,6 @@
           <caret line="29" column="22" lean-forward="true" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#998#999#0" expanded="true" />
-            <element signature="e#1043#1044#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -776,8 +744,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#998#999#0" expanded="true" />
-            <element signature="e#1043#1044#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -798,8 +764,6 @@
           <caret line="8" column="26" lean-forward="false" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#998#999#0" expanded="true" />
-            <element signature="e#1043#1044#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -820,8 +784,6 @@
           <caret line="8" column="26" lean-forward="false" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#998#999#0" expanded="true" />
-            <element signature="e#1043#1044#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -842,8 +804,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#998#999#0" expanded="true" />
-            <element signature="e#1043#1044#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -864,8 +824,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#998#999#0" expanded="true" />
-            <element signature="e#1043#1044#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -876,8 +834,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#998#999#0" expanded="true" />
-            <element signature="e#1043#1044#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -959,14 +915,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Buses.java">
+    <entry file="file://$PROJECT_DIR$/src/GarageTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="12" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        <state relative-caret-position="544">
+          <caret line="32" column="17" lean-forward="false" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#998#999#0" expanded="true" />
-            <element signature="e#1043#1044#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Garage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="22" column="45" lean-forward="false" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Buses.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="62" lean-forward="true" selection-start-line="10" selection-start-column="62" selection-end-line="10" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -977,28 +951,6 @@
           <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Garage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="37" lean-forward="false" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GarageTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="52" lean-forward="true" selection-start-line="38" selection-start-column="52" selection-end-line="38" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1310#1311#0" expanded="true" />
-            <element signature="e#1369#1370#0" expanded="true" />
           </folding>
         </state>
       </provider>
