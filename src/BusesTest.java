@@ -12,9 +12,9 @@ public class BusesTest {
     public void setup(){
         buses1 = new Buses(15,"New Avenue 29",12);
         buses2 = new Buses();
-        bus1 = new Bus(Bus.Marks.Mercedes,43,"FE3242GR");
-        bus2 = new Bus(Bus.Marks.Toyota,31,"FE3242GR");
-        bus3 = new Bus(Bus.Marks.Volvo,78,"FE3242GR");
+        bus1 = new BusBuilder().build(Marks.Mercedes,43,"FE3242GR");
+        bus2 = new BusBuilder().build(Marks.Toyota,31,"FE3242GR");
+        bus3 = new BusBuilder().build(Marks.Volvo,78,"FE3242GR");
         buses1.addBus(bus1);
         buses1.addBus(bus2);
         buses2.addBus(bus2);

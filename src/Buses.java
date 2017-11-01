@@ -41,28 +41,23 @@ public class Buses {
         }
     }
 
-    public List<Bus> busesOutputIncreasingCapacity(){
-        List<Bus> garage = new ArrayList<Bus>();
+    public List<Bus> busesInAlphabeticalOrder(){
+        List<Bus> garage = new ArrayList<>();
         List<Bus> tempGarage = this.garage;
-        String temp;
-        List<String> temp1;
+        List<String> temp1 = new ArrayList<>();
         for (Bus bus : tempGarage)
             temp1.add(bus.getNumber());
         Collections.sort(temp1);
-
-        int minCapacity = this.garage.get(0).getCapacity();
-        for(int i=0;i<garage.size();i++) {
-            for (Bus bus : tempGarage) {
-                if (bus.getCapacity() <= minCapacity) {
-                    minCapacity = bus.getCapacity();
+        for(Bus bus : tempGarage){
+            for(int i=0;i<temp1.size();i++){
+                if(bus.getNumber() == temp1.get(i)){
+                    garage.add(bus);
                 }
             }
-            garage.add()
-                    garage.
         }
-
-        return Collections.sort(garage);
+        return garage;
     }
+
     public void addBus(Bus bus){
         this.garage.add(bus);
     }

@@ -10,9 +10,9 @@ public class BusTest {
 
     @BeforeTest
     public void setup(){
-        bus1 = new Bus(Bus.Marks.Mercedes,43,"FE3242GR");
-        bus2 = new Bus(Bus.Marks.Toyota,31,"FE3242GR");
-        bus3 = new Bus(Bus.Marks.Volvo,78,"FE3242GR");
+        bus1 = new BusBuilder().build(Marks.Mercedes,43,"FE3242GR");
+        bus2 = new BusBuilder().build(Marks.Toyota,31,"FE3242GR");
+        bus3 = new BusBuilder().build(Marks.Volvo,78,"FE3242GR");
     }
 
     @DataProvider
@@ -28,11 +28,11 @@ public class BusTest {
 
     @DataProvider
     public Object[][] getMarkProvider(){
-        return new Object[][]{ {bus1, Bus.Marks.Mercedes}, {bus2, Bus.Marks.Toyota}, {bus3, Bus.Marks.Volvo} };
+        return new Object[][]{ {bus1, Marks.Mercedes}, {bus2, Marks.Toyota}, {bus3, Marks.Volvo} };
     }
 
     @Test(dataProvider = "getMarkProvider")
-    public void getMarkTest(Bus bus, Bus.Marks marks){
+    public void getMarkTest(Bus bus, Marks marks){
         assertEquals(bus.getMark(),marks);
     }
 
