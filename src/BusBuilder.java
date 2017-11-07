@@ -5,10 +5,12 @@ public class BusBuilder {
     private Marks mark;
     private int capacity;
     private String number;
-    private static String pattern = "[A-Z]{2}\\d{4}[A-Z]{2}";
+    private static String NUMBER_PATTERN = "[A-Z]{2}\\d{4}[A-Z]{2}";
+    private static int MIN_CAPACITY = 16;
+    private static int MAX_CAPACITY = 200;
 
-    public static void setPattern(String pattern) {
-        BusBuilder.pattern = pattern;
+    public static void setNumberPattern(String numberPattern) {
+        BusBuilder.NUMBER_PATTERN = numberPattern;
     }
 
     public void setNumber(String number) {
@@ -25,10 +27,13 @@ public class BusBuilder {
     }
 
     public Bus build(Marks mark, int capacity, String number){
-        if (capacity > 200 | capacity < 16) throw new IllegalArgumentException("Wrong capacity");
-        Pattern p = Pattern.compile(this.pattern);
+        StringBuilder possibleException = new StringBuilder();
+        if (capacity > MAX_CAPACITY | capacity < MIN_CAPACITY) possibleException.append("Wrong capacity");
+        Pattern p = Pattern.compile(this.NUMBER_PATTERN);
         Matcher m = p.matcher(number);
-        if (!m.matches()) throw new IllegalArgumentException("Wrong number");
+        if (!m.matches()) possibleException.append("Wrong number");
+        if(possibleException.length() != 0)
+            throw new IllegalArgumentException(possibleException.toString());
         this.mark = mark;
         this.capacity = capacity;
         this.number = number;

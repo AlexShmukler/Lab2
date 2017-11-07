@@ -7,12 +7,10 @@ public class Buses {
     private List<Bus> garage;
     private int capacity;
     private String location;
-    private int employers;
 
     public Buses(){
         this.capacity = 10;
         this.location = "Main Str. 32";
-        this.employers = 20;
         this.garage = new ArrayList<Bus>();
     }
     public Buses(int capacity, String location, int employers){
@@ -20,7 +18,6 @@ public class Buses {
         if ((!(employers > 1 | employers < 50))) throw new IllegalArgumentException("Wrong input(1 < employers < 50)");
         this.capacity = capacity;
         this.location = location;
-        this.employers = employers;
         this.garage = new ArrayList<Bus>();
     }
 
@@ -28,7 +25,6 @@ public class Buses {
         this.location = location;
         this.capacity = capacity;
         this.garage = garage;
-        this.employers = employers;
     }
 
     public void deleteBus(String number){
@@ -75,7 +71,6 @@ public class Buses {
         int result = capacity * 31;
         result+=location.hashCode();
         result+=garage.hashCode();
-        result+=employers * 31;
         return result;
     }
 
@@ -86,7 +81,7 @@ public class Buses {
         if(this.getClass()!=obj.getClass())
             return false;
         Buses temp = (Buses)obj;
-        return ( (this.capacity==temp.capacity) && (this.location==temp.location) && (this.garage==temp.garage) && (this.employers==temp.employers));
+        return ( (this.capacity==temp.capacity) || (this.location==temp.location) || (this.garage==temp.garage));
     }
 
     public List<Bus> getGarage() {
@@ -112,10 +107,6 @@ public class Buses {
     public void setLocation(String location) {
         this.location = location;
     }
-
-    public int getEmployers() { return employers; }
-
-    public void setEmployers(int employers) { this.employers = employers; }
 
     public int getAmountOfBuses(){
         return this.garage.size();
